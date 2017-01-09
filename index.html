@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="scss/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Wikipedia Viewer... Find whatever you want</h1>
+    </header>
+    <main>
+      <div class="random-article">
+        <h2>Find a random article at Wikipedia:</h2>
+        <button onClick=window.open("https://en.wikipedia.org/wiki/Special:Random") type="button" name="button">Random article</button>
+      </div>
+      <div class="search-article">
+        <form class="" action="" method="">
+          <label for="text">
+            <input type="text" name="text" value=""><button type="button" name="button">Search</button>
+          </label>
+          <!--
+           https://en.wikipedia.org/w/api.php?action=opensearch&format=json&maxlag=50&search=luk
+           /w/api.php?action=opensearch&format=json&maxlag=20&search=john&namespace=&limit=500&callback=
+        -->
+
+        </form>
+      </div>
+    </main>
+    <footer>
+      <address>
+        Coded by IvTs
+      </address>
+    </footer>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </body>
+</html>
