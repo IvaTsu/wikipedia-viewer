@@ -14,28 +14,20 @@
     <main>
       <div class="random-article">
         <h2>Find a random article at Wikipedia:</h2>
-        <button onClick=window.open("https://en.wikipedia.org/wiki/Special:Random") type="button" name="button">Random article</button>
+        <button onclick='window.open("https://en.wikipedia.org/wiki/Special:Random")'>Random article</button>
       </div>
       <div class="search-article">
-        <form class="" action="" method="">
-          <label for="text">
-            <input type="text" name="text" value=""><button type="button" name="button">Search</button>
-          </label>
-          <!--
-           https://en.wikipedia.org/w/api.php?action=opensearch&format=json&maxlag=50&search=luk
-           /w/api.php?action=opensearch&format=json&maxlag=20&search=john&namespace=&limit=500&callback=
-        -->
-
-        </form>
+        <input type="text" id="search-value"></input>
+        <button id="search-btn">Search</button>
       </div>
+      <div class="message"></div>
     </main>
     <footer>
       <address>
         Coded by IvTs
       </address>
     </footer>
-    <script type="text/javascript" src="js/script.js">
-
-    </script>
+    <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
