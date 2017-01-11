@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAQ,uBACR",
+"mappings": "AAAQ,uBAAY;AAEpB,MAAO;EACL,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,OAAO",
 "sources": ["styles.scss"],
 "names": [],
 "file": "styles.css"

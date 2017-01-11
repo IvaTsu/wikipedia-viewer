@@ -1,3 +1,7 @@
 @import url(_reset.css);
+.block {
+  margin: 10px;
+  background-color: grey;
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
