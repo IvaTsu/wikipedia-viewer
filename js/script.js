@@ -7,26 +7,27 @@ $(document).ready(function() {
 function createRequest() {
   var httpRequest;
   var request = getSearchValue();
-  var numberOfPages = getNumberOfPages();
-  if (numberOfPages > 0) {
-    httpRequest = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + request +"&limit=" + numberOfPages + "&callback=?";
+  if (!request) {
+    $(".content").append('<div class="block">' +
+      "<h1>" + "Sorry, there is nothing to show" + "</h1>" +
+      '</div>');
   } else {
-    httpRequest = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + request +"&limit=10&callback=?";
+    var numberOfPages = getNumberOfPages();
+    if (numberOfPages > 0) {
+      httpRequest = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + request + "&limit=" + numberOfPages + "&callback=?";
+    } else {
+      httpRequest = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + request + "&limit=10&callback=?";
+    }
+    $.getJSON(httpRequest, function(json) {
+      formContent(json);
+    });
   }
-
-  $.getJSON(httpRequest, function(json) {
-
-    formContent(json);
-
-  });
-
 }
 
 function formContent(json) {
   var objNames = formRequest(1, json);
   var objDescriptions = formRequest(2, json);
   var objLink = formRequest(3, json);
-
   for (var i = 0; i < objNames.length; i++) {
     addBlock(objNames[i], objDescriptions[i], objLink[i]);
   }

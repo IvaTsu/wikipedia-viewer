@@ -1,5 +1,77 @@
 @import "_reset.css";
 
+$primary_color: rgb(32, 7, 71);
+
+@mixin center-position {
+  text-align: center;
+}
+
+body {
+  background-image: url("../img/wallpaper-blur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header,
+.random-article,
+.search-article {
+  @include center-position;
+}
+
+header {
+  margin-top: 10%;
+  h1 {
+    font-size: 45px;
+    color: $primary_color;
+  }
+}
+
+.random-article {
+  font-size: 40px;
+}
+
+.random-article-click {
+  text-decoration: none;
+  color: $primary_color;
+}
+
+.random-article-click:visited {
+  @extend .random-article-click;
+}
+
+.random-article-click:hover {
+  text-decoration: underline;
+  color: $primary_color;
+}
+
+.search-article {
+  margin-top: 5%;
+}
+
+input[type="text"],
+input[type="number"] {
+  height: 70px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: $primary_color;
+}
+
+input[type="text"] {
+  width: 700px;
+}
+
+input[type="number"] {
+  width: 250px;
+}
+
+#img-search {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+  width: 70px;
+}
+
 .block {
   margin: 10px;
   background-color: grey;

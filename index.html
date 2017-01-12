@@ -13,23 +13,15 @@
     </header>
     <main>
       <div class="random-article">
-        <h2>Find a random article at Wikipedia:</h2>
-        <button onclick='window.open("https://en.wikipedia.org/wiki/Special:Random")'>Random article</button>
+        <h2>or maybe <a class="random-article-click"href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random</a> one?</h2>
       </div>
       <div class="search-article">
         <input type="text" id="search-value" placeholder="Enter your request"></input>
-        <input type="number" id="number" placeholder="Number of pages"></input>
-        <button id="search-btn">Search</button>
+        <input type="number" id="number" min="1" placeholder="Number of pages"></input>
+        <a href="#" id="search-btn"><img src="img/search.png" alt="Search" id="img-search"></a>
       </div>
-      <div class="content">
-
-      </div>
+      <div class="content"></div>
     </main>
-    <footer>
-      <address>
-        Coded by IvTs
-      </address>
-    </footer>
     <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
