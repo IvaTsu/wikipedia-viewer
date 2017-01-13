@@ -5,11 +5,12 @@ $(document).ready(function() {
 });
 
 function createRequest() {
+  $("header").addClass("hide");
   var httpRequest;
   var request = getSearchValue();
   if (!request) {
     $(".content").append('<div class="block">' +
-      "<h1>" + "Sorry, there is nothing to show" + "</h1>" +
+      "<h1 class='block-header'>" + "Sorry, there is nothing to show" + "</h1>" +
       '</div>');
   } else {
     var numberOfPages = getNumberOfPages();
@@ -35,8 +36,8 @@ function formContent(json) {
 
 function addBlock(heading, content, link) {
   $(".content").append('<div class="block" onclick=window.open("' + link + '")>' +
-    "<h1>" + heading +"</h1>" +
-    "<p>" + content +"</p>" +
+    "<h1 class='block-header'>" + heading +"</h1>" +
+    "<p class='block-content'>" + content +"</p>" +
     '</div>');
 }
 

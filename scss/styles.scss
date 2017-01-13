@@ -19,6 +19,7 @@ header,
 }
 
 header {
+  position: relative;
   margin-top: 10%;
   h1 {
     font-size: 45px;
@@ -48,13 +49,19 @@ header {
   margin-top: 5%;
 }
 
+.content {
+  width: 80%;
+  margin-top: 7%;
+  margin-left: 10%;
+}
+
 input[type="text"],
 input[type="number"] {
   height: 70px;
   background: transparent;
   border: none;
   font-size: 30px;
-  color: $primary_color;
+  color: rgb(153, 185, 198);
 }
 
 input[type="text"] {
@@ -76,4 +83,23 @@ input[type="number"] {
   margin: 10px;
   background-color: grey;
   cursor: pointer;
+}
+
+.block:hover {
+  border-left: 8px solid black;
+}
+
+.block-header {
+  font-family: Helvetica Neue, Helvetica, Arimo, Liberation Sans, Lucida Grande, sans-serif;
+  font-size: 26px;
+}
+
+.block-content {
+  padding: 10px 10px 10px 20px;
+  font-family: Times, Georgia, Linux Libertine, Cambria, serif;
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
 }
