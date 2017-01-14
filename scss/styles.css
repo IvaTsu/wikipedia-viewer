@@ -1,8 +1,7 @@
 @import url(_reset.css);
 body {
   background-image: url("../img/wallpaper-blur.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 header,
 .random-article,
