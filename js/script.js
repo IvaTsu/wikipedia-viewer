@@ -2,6 +2,8 @@
 $(document).ready(function() {
   var searchBtn = document.getElementById('search-btn');
   searchBtn.addEventListener('click', createRequest, false);
+  onEnterTap($("#search-value"));
+  onEnterTap($("#number"));
 });
 
 function createRequest() {
@@ -56,4 +58,12 @@ function getNumberOfPages() {
 
 function getSearchValue() {
   return document.getElementById('search-value').value;
+}
+
+function onEnterTap(field) {
+  field.keyup(function(event) {
+    if(event.keyCode == 13) {
+        $("#img-search").click();
+    }
+  });
 }
