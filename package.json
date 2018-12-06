@@ -1,34 +1,34 @@
 {
-  "name": "wikipedia-viewer",
-  "version": "0.0.1",
-  "description": "Search for anything at Wikipedia.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IvaTsu/wikipedia-viewer.git"
-  },
-  "keywords": [
-    "Wikipedia",
-    "Search",
-    "View"
-  ],
-  "author": "Ivan Tsud",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IvaTsu/wikipedia-viewer/issues"
-  },
-  "homepage": "https://github.com/IvaTsu/wikipedia-viewer#readme",
-  "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.2"
-  }
+	"name": "wikipedia-viewer",
+	"version": "0.0.1",
+	"description": "Search for anything at Wikipedia.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IvaTsu/wikipedia-viewer.git"
+	},
+	"keywords": [
+		"Wikipedia",
+		"Search",
+		"View"
+	],
+	"author": "Ivan Tsud",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/IvaTsu/wikipedia-viewer/issues"
+	},
+	"homepage": "https://github.com/IvaTsu/wikipedia-viewer#readme",
+	"devDependencies": {
+		"eslint": "^5.9.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-prettier": "^3.3.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.2",
+		"eslint-plugin-prettier": "^3.0.0",
+		"eslint-plugin-react": "^7.11.1",
+		"prettier": "^1.15.2"
+	}
 }

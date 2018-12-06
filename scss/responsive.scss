@@ -1,91 +1,91 @@
-@import "styles";
+@import 'styles';
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {
-  input[type="text"] {
-    width: 600px;
-  }
+	input[type='text'] {
+		width: 600px;
+	}
 
-  input[type="number"] {
-    width: 250px;
-  }
+	input[type='number'] {
+		width: 250px;
+	}
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  header {
-    h1 {
-      font-size: 38px;
-    }
-  }
+	header {
+		h1 {
+			font-size: 38px;
+		}
+	}
 
-  input[type="text"],
-  input[type="number"] {
-    height: 60px;
-    font-size: 20px;
-    @include placeholder {
-      color: $primary_color;
-    }
-  }
+	input[type='text'],
+	input[type='number'] {
+		height: 60px;
+		font-size: 20px;
+		@include placeholder {
+			color: $primary_color;
+		}
+	}
 
-  input[type="text"] {
-    width: 500px;
-  }
+	input[type='text'] {
+		width: 500px;
+	}
 
-  input[type="number"] {
-    width: 170px;
-  }
+	input[type='number'] {
+		width: 170px;
+	}
 
-  #img-search {
-    width: 50px;
-  }
+	#img-search {
+		width: 50px;
+	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  header {
-    h1,
-    h2 {
-      font-size: 24px;
-    }
-    h1 {
-      color: rgb(188, 188, 175);
-    }
-  }
+	header {
+		h1,
+		h2 {
+			font-size: 24px;
+		}
+		h1 {
+			color: rgb(188, 188, 175);
+		}
+	}
 
-  input[type="text"],
-  input[type="number"] {
-    float: left;
-    height: 40px;
-  }
+	input[type='text'],
+	input[type='number'] {
+		float: left;
+		height: 40px;
+	}
 
-  input[type="text"] {
-    width: 100%;
-    margin-bottom: 5%;
-  }
+	input[type='text'] {
+		width: 100%;
+		margin-bottom: 5%;
+	}
 }
 
 @media screen and (max-width: 479px) and (min-width: 320px) {
-  header {
-    h1,
-    h2 {
-      font-size: 18px;
-    }
-    h1 {
-      color: rgb(188, 188, 175);
-    }
-  }
+	header {
+		h1,
+		h2 {
+			font-size: 18px;
+		}
+		h1 {
+			color: rgb(188, 188, 175);
+		}
+	}
 
-  input[type="text"],
-  input[type="number"] {
-    float: left;
-    height: 30px;
-  }
+	input[type='text'],
+	input[type='number'] {
+		float: left;
+		height: 30px;
+	}
 
-  input[type="text"] {
-    width: 100%;
-    margin-bottom: 5%;
-  }
+	input[type='text'] {
+		width: 100%;
+		margin-bottom: 5%;
+	}
 
-  #img-search {
-    margin-left: 7px;
-    width: 40px;
-  }
+	#img-search {
+		margin-left: 7px;
+		width: 40px;
+	}
 }
